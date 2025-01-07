@@ -1,7 +1,6 @@
 import re
-
 def extract_first_number(text):
-    match = re.match(r'.*?(\d)', text)
+    match = re.search(r'(\d)', text)
     return match.group(1) if match else '0'
 
 def extract_last_number(text):
